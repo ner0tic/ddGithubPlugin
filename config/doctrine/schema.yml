@@ -1,0 +1,22 @@
+ddGithubTable:
+  actAs:
+    Timestampable: ~
+    Sluggable: 
+      fields: [table_name, repo_name, repo_branch]
+  columns:
+    table_name:
+      type: string
+      notnull: true
+    table_id:
+      type: integer
+      notnull: true
+    repo_user:
+      type: string
+      notnull: true
+    repo_name:
+      type: string
+      notnull: true
+    repo_branch:
+      type: string
+      notnull: true
+      default: 'master'
